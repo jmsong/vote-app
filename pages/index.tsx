@@ -59,7 +59,7 @@ export default function Home() {
             <button style={{ fontSize: 32, marginRight: 8 }} onClick={() => addVoteDocument("no")}>
               Joe Biden
             </button>
-            <h3>Joe Biden Haters: {votes?.docs?.filter((doc) => (doc.data() as VoteDocument).vote === "no").length}</h3>
+            <h3>Joe Biden Lovers: {votes?.docs?.filter((doc) => (doc.data() as VoteDocument).vote === "no").length}</h3>
           </div>
         </>
       )}
