@@ -53,13 +53,13 @@ export default function Home() {
             <button style={{ fontSize: 32, marginRight: 8 }} onClick={() => addVoteDocument("yes")}>
               Donald Trump
             </button>
-            <h3>Pineapple Lovers: {votes?.docs?.filter((doc) => (doc.data() as VoteDocument).vote === "yes").length}</h3>
+            <h3>Donald Trump Lovers: {votes?.docs?.filter((doc) => (doc.data() as VoteDocument).vote === "yes").length}</h3>
           </div>
           <div style={{ flexDirection: "row", display: "flex" }}>
             <button style={{ fontSize: 32, marginRight: 8 }} onClick={() => addVoteDocument("no")}>
               Joe Biden
             </button>
-            <h3>Pineapple Haters: {votes?.docs?.filter((doc) => (doc.data() as VoteDocument).vote === "no").length}</h3>
+            <h3>Joe Biden Haters: {votes?.docs?.filter((doc) => (doc.data() as VoteDocument).vote === "no").length}</h3>
           </div>
         </>
       )}
